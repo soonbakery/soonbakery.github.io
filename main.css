@@ -1,0 +1,240 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: #FFC2C3;
+    max-width: 1440px;
+    margin: auto;
+}
+
+section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+}
+
+.delivery-row{
+    background-color: black;
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+
+.header-row{
+    background-color: #fffaf1;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-simple{
+    margin-left: 20px;
+    width: auto;
+    height: 4rem;
+}
+
+.sublinks{
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.sublinks:hover{
+    color:rgb(94, 108, 108);
+
+}
+
+
+.pic-bg{
+    display: flex;
+    height: 638px;
+    background-image: url('Main BG.jpg');
+    background-attachment: fixed;
+    background-size:auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    align-items:end;
+} 
+
+.logo{
+    border-radius: 40px;
+}
+
+#abt-us-pic{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#abt-us-title{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#abt-us-des{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-title{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjust 300px to your desired minimum width */
+    grid-gap: 10px; /* Adjust gap between products */
+  }
+  
+.product {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+.rounded-rectangle{
+    width: 250px;        /* Set the width of the rectangle */
+    height: 400px;       /* Set the height of the rectangle */
+    background-color: #574440;  /* Background color of the rectangle */
+    border-radius: 15px; /* Radius of the corners */
+}
+
+.best-seller-img{
+    width: 250px;        /* Set the width of the rectangle */
+    height: 250px;       /* Set the height of the rectangle */
+    border-radius: 15px;
+}
+
+.best-seller-title{
+    margin: 0px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: left;
+    color: white;
+}
+
+.best-seller-des{
+    margin: 0px;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: left;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+.why-us-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust 300px to your desired minimum width */
+    grid-gap: 100px; /* Adjust gap between products */
+    display: flex;
+    justify-content: center;
+  }
+  
+.why-us-item {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.why-us-img{
+    width: 100px;        /* Set the width of the rectangle */
+    height: 100px;       /* Set the height of the rectangle */
+}
+
+.why-us-des{
+    margin: 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: #FFBF81;
+}
+
+.footer-title{
+    padding-left: 2rem;
+    width: calc(100%/3);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer-col{
+    width: calc(100%/3);
+    padding-left: 2rem;
+}
+
+.footer-img{
+    display: inline-block;
+}
+
+.footer-des{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* MEDIA FOR 992px */
+
+@media (max-width: 991.5px) {
+    .navbar{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo-simple{
+        width: auto;
+        height: 4rem;
+        display: none;
+    }
+
+    .sublinks{
+        flex: 1; /* Each link takes up one-third of the space */
+        width: calc(100%/3); /* Reset width to auto to fill remaining space */
+    }
+
+    #abt-us-pic{
+        display: none;
+    }
+  } 
+
+/* MEDIA FOR 576px */
+
+  @media(max-width: 576px){
+    .sublinks{
+        font-size: 1rem;
+      }
+
+    #abt-us-title{
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #abt-us-des{
+        font-size: 1rem;
+    }
+  }
