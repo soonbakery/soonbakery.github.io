@@ -57,9 +57,7 @@ header{
 
 .sublinks:hover{
     color:rgb(94, 108, 108);
-
 }
-
 
 .pic-bg{
     display: flex;
@@ -101,10 +99,30 @@ header{
     padding-bottom: 2rem;
 }
 
+.why-us-con-main{
+    display: flex;
+}
+
+.why-us-con{
+    display: block;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.why-us-img{
+    width: 25%; 
+}
+  
+.why-us-des{
+    margin: 0px;
+    text-align: center;
+    font-size: 100%;
+}
+
 .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjust 300px to your desired minimum width */
-    grid-gap: 10px; /* Adjust gap between products */
+    grid-gap: 25px; /* Adjust gap between products */
   }
   
 .product {
@@ -145,50 +163,27 @@ header{
     font-weight: 100;
 }
 
-.why-us-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust 300px to your desired minimum width */
-    grid-gap: 100px; /* Adjust gap between products */
-    display: flex;
-    justify-content: center;
-  }
-  
-.why-us-item {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    text-align: center;
-  }
-
-.why-us-img{
-    width: 100px;        /* Set the width of the rectangle */
-    height: 100px;       /* Set the height of the rectangle */
-}
-
-.why-us-des{
-    margin: 0px;
-    text-align: center;
-    font-size: 1rem;
-}
 
 footer{
     background-color: #FFBF81;
+    display: flex;
+}
+
+.footer-con{
+    padding-left: 2rem;
+    width: calc(100%/3);
 }
 
 .footer-title{
-    padding-left: 2rem;
-    width: calc(100%/3);
+    width: 100%;
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.footer-col{
-    width: calc(100%/3);
-    padding-left: 2rem;
-}
-
 .footer-img{
+    padding: 0px;
     display: inline-block;
+    width: 50px;
 }
 
 .footer-des{
@@ -236,5 +231,93 @@ footer{
 
     #abt-us-des{
         font-size: 1rem;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Adjust 300px to your desired minimum width */
+        grid-gap: 10px; /* Adjust gap between products */
+      }
+      
+    .product {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+    
+    .rounded-rectangle{
+        width: 150px;        /* Set the width of the rectangle */
+        height: 275px;       /* Set the height of the rectangle */
+        background-color: #574440;  /* Background color of the rectangle */
+        border-radius: 15px; /* Radius of the corners */
+    }
+    
+    .best-seller-img{
+        width: 150px;        /* Set the width of the rectangle */
+        height: 150px;       /* Set the height of the rectangle */
+        border-radius: 15px;
+    }
+    
+    .best-seller-title{
+        margin: 0px;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        text-align: left;
+        color: white;
+        font-size: 0.8rem;
+    }
+    
+    .best-seller-des{
+        margin: 0px;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        text-align: left;
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 100;
+    }
+
+
+    footer{
+        display: block;
+    }
+
+    .footer-con{
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    .footer-title{
+        padding-left: 2rem;
+        width: calc(100%/3);
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .footer-img{
+        display: inline-block;
+        width: 25px;
+    }
+    
+    .footer-des{
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+  }
+
+  @media(max-width: 450px){
+    .con{
+        display: block;
+    }
+
+    .why-us-con{
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+
+    .why-us-img{
+        width: 15%;
     }
   }
