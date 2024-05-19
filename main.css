@@ -116,7 +116,7 @@ header{
 .why-us-des{
     margin: 0px;
     text-align: center;
-    font-size: 100%;
+    font-size: 1.25rem;
 }
 
 .product-list {
@@ -215,6 +215,10 @@ footer{
     #abt-us-pic{
         display: none;
     }
+
+    .why-us-des{
+        font-size: 1rem;
+    }
   } 
 
 /* MEDIA FOR 576px */
@@ -289,8 +293,8 @@ footer{
     }
 
     .footer-title{
-        padding-left: 2rem;
-        width: calc(100%/3);
+        padding-left: 0;
+        width: 100%;
         font-size: 0.75rem;
         font-weight: 600;
     }
@@ -308,7 +312,7 @@ footer{
   }
 
   @media(max-width: 450px){
-    .con{
+    .why-us-con-main{
         display: block;
     }
 
